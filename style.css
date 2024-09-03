@@ -1,0 +1,1138 @@
+/*
+Theme Name: WP Theme Assignment
+Theme URI: http://yourwebsite.com
+Author: Nida Zafar
+Author URI: http://yourwebsite.com
+Description: A modern, responsive, and user-friendly WordPress theme for assignments.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wp-theme-assignment
+*/
+/* General Body Styles */
+ /*Header styling*/
+/* Reset some default browser styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Header styling */
+header {
+    background-color: #f8f9fa; 
+    border-bottom: 1px solid #e1e1e1; 
+    padding: 10px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; 
+    width: auto;
+}
+
+
+nav {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #020202; 
+    font-weight: bold;
+   
+}
+
+.nav-menu a:hover {
+    color: #eb281a;
+}
+/* CSS for search bar */
+.search-bar {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+/* Style the search form */
+.search-bar form {
+    display: flex;
+    align-items: center;
+    border: 2px solid #1b1b1b; /* Black border */
+    border-radius: 25px; /* Rounded corners */
+    background-color: #fff;
+    
+}
+
+/* Style the search field */
+.search-bar .search-field {
+    padding: 5px;
+    font-size: 14px;
+    border: none; /* Remove default input border */
+    border-radius: 25px; /* Rounded corners */
+    outline: none; /* Remove outline when focused */
+    flex-grow: 1; /* Allow the input to grow and fill the available space */
+    border-right: 2px solid #000; /* Border between the input field and the icon */
+}
+
+/* Style the search icon */
+.search-bar .search-icon {
+    color: #f7f2f2; /* Color of the icon */
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px; /* Space between the icon and the input field */
+    margin-right: 10px; /* Space from the right edge of the container */
+    padding: 10px; /* Padding around the icon to make it clickable */
+    background-color: #0f0f0f; /* Background color to match the search bar */
+    border-radius: 25px; /* Rounded corners to match the search bar */
+    border: 2px solid #000; /* Black border to match the search bar */
+}
+
+/* Featured Image Container */
+.featured-image-container {
+    position: relative; 
+    width: 100vw; 
+    height: 150vh; 
+    overflow: hidden; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.featured-image img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+}
+
+/* Overlay Content Styling */
+.overlay-content {
+    position: absolute; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    color: white; 
+    text-align: center; 
+    padding: 10px 20px; 
+   
+    width: 80%; 
+    max-width: 600px; 
+    box-sizing: border-box; 
+}
+
+@media (max-width: 768px) {
+    .overlay-content {
+        font-size: 14px; 
+        padding: 10px; 
+    }
+}
+
+
+.service-section {
+    background-color: #e4e0e0; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.service-container {
+    display: flex; 
+    gap: 0; 
+}
+
+.service-item {
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    background-color: #e4e0e0; 
+}
+.icon-container {
+    margin-bottom: 20px; 
+}
+
+.icon {
+    font-size: 40px; 
+    color: #f7f1f1; 
+    background-color: black; 
+    padding: 20px; 
+    border-radius: 50%; 
+}
+
+/* Text Content Styling */
+.text-content h2 {
+    font-size: 24px; 
+    margin: 0 0 10px; 
+    color: #eb281a; 
+}
+
+.text-content p {
+    font-size: 16px; 
+    color: #070606; 
+    margin: 0; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-container {
+        flex-direction: column; 
+    }
+
+    .service-item {
+        margin-bottom: 20px; 
+    }
+}
+
+
+/* Container for the heading, button, and posts */
+.heading-container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style for the heading and button row */
+.heading-button-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.heading-button-row p {
+    font-size: 24px;
+    margin: 0;
+}
+
+.view-all-button {
+    background-color: #eb281a;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.view-all-button:hover {
+    background-color: #c71c1c;
+}
+
+/* Style for the section divider */
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: black;
+    margin: 20px 0;
+}
+
+/* Grid layout for portfolio items */
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+}
+
+/* Each portfolio item */
+.portfolio-item {
+    flex: 1 1 calc(33.333% - 20px); 
+    box-sizing: border-box;
+    max-width: calc(33.333% - 20px); 
+    position: relative;
+    overflow: hidden; 
+    background-color: #f0f0f0; 
+}
+
+/* Style for images within portfolio items */
+.portfolio-item img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    display: block;
+    border-bottom: 1px solid #ddd; 
+}
+
+/* Optional styling for hover effect */
+.portfolio-item:hover img {
+    opacity: 0.8; 
+}
+
+/* Style for the section divider */
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: black;
+    margin: 20px 0;
+}
+/* Container holding both content blocks */
+.content-row {
+    display: flex; 
+}
+
+/* Individual content block styling */
+.content-container {
+    flex: 1; 
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Styling for headings */
+.content-container h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+/* Styling for paragraphs */
+.content-container p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* "Read More" button styling */
+.read-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #eb281a; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-button:hover {
+    background-color: darkorange; 
+}
+
+/* Email label and link styling */
+.email-label {
+    color: blue;
+}
+
+.email-link {
+    color: red;
+    text-decoration: none; 
+}
+
+.email-link:hover {
+    text-decoration: underline; 
+}
+
+/* Container for social icons */
+.social-icons-container {
+    margin-top: 20px; /* Add spacing between email and social icons */
+}
+
+/* Social icons container */
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+/* General styling for all social icons */
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Facebook icon styling */
+.social-icon.facebook {
+    background-color: #3b5998; 
+}
+
+/* Skype icon styling */
+.social-icon.skype {
+    background-color: #00aff0; 
+}
+
+/* Twitter icon styling */
+.social-icon.twitter {
+    background-color: #1da1f2; 
+}
+
+/* Google+ icon styling */
+.social-icon.google-plus {
+    background-color: #db4437; 
+}
+
+/* LinkedIn icon styling */
+.social-icon.linkedin {
+    background-color: #0077b5; 
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .content-row {
+        flex-direction: column; 
+    }
+
+    .social-icons {
+        justify-content: center; 
+    }
+}
+
+footer {
+    background-color: #f8f8f8; 
+    padding: 10px 0;
+    text-align: center; 
+    font-size: 0.9rem;
+    color: #333; 
+    margin-top: 20px;
+}
+
+footer a {
+    color: red; 
+    text-decoration: none; 
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
+
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* General button styling */
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Specific button colors */
+.advertising-btn {
+    background-color: black;
+}
+
+.multimedia-btn {
+    background-color: black;
+}
+
+.photography-btn {
+    background-color: red;
+}
+
+/* Hover effects */
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Divider line styling */
+.section-divider {
+    margin-top: 20px;
+    border: 0;
+    border-top: 2px solid #ccc;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}.recent-posts-section {
+    margin: 10px 0;
+    
+}
+
+.recent-posts-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Flexbox grid for posts */
+.recent-posts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px; /* Space between posts horizontally */
+    row-gap: 0; /* Removes space between rows */
+}
+
+
+.recent-post-item {
+    flex: 1 1 calc(33.333% - 20px); 
+    box-sizing: border-box;
+    max-width: calc(33.333% - 20px); 
+    position: relative;
+    overflow: hidden; 
+    background-color: #f0f0f0; 
+}
+
+/* Ensure images fit well within their container */
+.recent-post-item img {
+    width: 100%; /* Ensures the image fills the container width */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Ensure text content takes the remaining space */
+.recent-post-item .post-content {
+    flex: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .recent-post-item {
+        flex: 1 1 calc(50% - 20px); /* Two items per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .recent-post-item {
+        flex: 1 1 100%; /* One item per row on small screens */
+    }
+}
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination a,
+.pagination span {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    color: #333;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    background-color: red;
+    border-color: #ccc;
+}
+
+.pagination .current {
+    background-color: red;
+    color: #fff;
+    border-color: #333;
+}
+
+.pagination .prev,
+.pagination .next {
+    font-weight: bold;
+}
+
+
+
+
+/* Existing styles */
+.custom-blog-content .post-title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust as needed */
+    padding: 10px; /* Space inside the container */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+/* Background color styles for post title containers */
+.post-title-black {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+}
+
+.post-title-orange {
+    background-color: #eb281a; /* Orange background */
+    color: #fff; /* White text color */
+}
+
+.custom-blog-content .post-date {
+    font-size: 14px; /* Font size for the date */
+    margin-right: 10px; /* Space between date and divider */
+}
+
+.custom-blog-content .vertical-divider {
+    width: 1px; /* Width of the vertical line */
+    height: 24px; /* Height of the line */
+    background-color: #fff; /* White color for the line */
+    margin: 0 10px; /* Space on both sides */
+}
+
+.custom-blog-content .post-title {
+    font-size: 24px; /* Font size for the title */
+    margin: 0;
+}
+
+/* Post Body */
+.post-body {
+    display: flex;
+    align-items: flex-start; /* Align items at the start */
+    margin-bottom: 20px; /* Space between post items */
+}
+
+.post-thumbnail {
+    margin-right: 20px; /* Space between image and meta */
+}
+
+.post-thumbnail img {
+    width: 150px; /* Fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: rounded corners for the image */
+}
+
+/* Post Meta */
+.post-meta {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Take remaining space */
+}
+
+.post-meta-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-meta-header {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Space between header and meta row */
+}
+
+.author-name {
+    font-weight: bold; /* Bold author name */
+    margin-right: 10px; /* Space between author name and date */
+    color: red;
+}
+
+.post-date {
+    font-size: 14px; /* Font size for the date */
+}
+
+/* Categories and Comments Row */
+.post-meta-row {
+    display: flex;
+    justify-content: space-between; /* Space between categories and comments */
+    align-items: center; /* Center items vertically */
+}
+
+.post-categories {
+    font-size: 14px; /* Font size for categories */
+}
+
+/* CSS for comment link */
+.comments-link {
+    color: red; /* Set the color of the comments link to red */
+    text-decoration: none; /* Remove underline from the link */
+}
+
+/* Optional: Additional styling for hover effect */
+.comments-link:hover {
+    text-decoration: underline; /* Add underline on hover for better visibility */
+}
+
+
+.category-title-orange {
+    color: #d4c1bf; /* Orange color for category links */
+}
+
+.category-title-black {
+    color: #000; /* Black color for category links */
+}
+
+/* Section divider below categories and comments */
+.post-meta-divider {
+    height: 1px; /* Height of the divider */
+    background-color: black; /* Black color for the divider */
+    margin: 10px 0; /* Space around the divider */
+}
+
+/* Additional styling */
+.custom-blog-content .post-content {
+    background-color: #f9f9f9; /* Light background for content */
+    padding: 20px; /* Space inside the content container */
+    border-radius: 5px; /* Optional: rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+
+
+/* Container for search results */
+.search-results-container {
+    padding: 20px;
+}
+
+/* Each result item container */
+.search-result-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Container for the post image */
+.search-result-image {
+    margin-right: 20px;
+}
+
+/* Style the post images */
+.search-result-image img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+}
+
+/* Container for the content part of the result */
+.search-result-content {
+    flex: 1;
+}
+
+/* Style for post titles */
+.search-result-content h2 a {
+    display: block;
+    padding: 10px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.search-result-content h2 a:hover {
+    background-color: #333; /* Darker background on hover */
+}
+
+/* Style for post excerpts */
+.search-result-content p {
+    color: #000; /* Black text */
+    margin: 0;
+}
+
+/* Styling for pagination */
+.search-results-container .pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.search-results-container .pagination .page-numbers {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #0073aa; /* Blue background */
+    color: #fff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.search-results-container .pagination .page-numbers.current {
+    background-color: #333; /* Dark background for current page */
+}
+
+.search-results-container .pagination .page-numbers:hover {
+    background-color: #005177; /* Darker blue on hover */
+}
+
+.search-results-container .pagination .prev, .pagination .next {
+    background-color: #0073aa;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.search-results-container .pagination .prev:hover, .pagination .next:hover {
+    background-color: #005177;
+}
+
+.contact-info {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.contact-item i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.contact-item p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.contact-item a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.service-action {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005bb5; /* Darker blue on hover */
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-main {
+    flex: 3;
+    margin-right: 20px; /* Adjust spacing as needed */
+}
+
+
+/* Base Styles */
+.blog-sidebar {
+    flex: 1;
+    /* Add styles to fit the design */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .content-main {
+        margin-right: 0;
+    }
+
+    .sidebar-custom-content {
+        margin-bottom: 20px; /* Adjust margin as needed */
+    }
+
+    .section-divider {
+        border: 0;
+        height: 1px;
+        background: #ddd; /* Light gray color for the divider */
+        margin: 20px 0; /* Adjust margin as needed */
+    }
+
+    /* Ensure the sidebar and featured images section have appropriate spacing */
+    .blog-sidebar {
+        margin: 10px 0; /* Adjust as needed */
+    }
+
+    .featured-images {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; /* Adjust spacing between images as needed */
+    }
+
+    .featured-image-item {
+        flex: 1 1 calc(33.333% - 10px); /* Three items per row, adjust the percentage and gap */
+        box-sizing: border-box;
+    }
+
+    .featured-image-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+/* Default styles (for screens larger than 768px) */
+.featured-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    gap: 10px; /* Adjust spacing between images as needed */
+}
+
+.featured-image-item {
+    box-sizing: border-box;
+}
+
+.featured-image-item img {
+    width: 100%;
+    height: 100px; /* Fixed height for uniformity */
+    object-fit: cover; /* Maintain aspect ratio while covering the area */
+    display: block;
+}
+.popular-posts {
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.popular-post-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Space between posts */
+}
+
+.popular-post-thumbnail {
+    margin-right: 10px; /* Space between image and text */
+}
+
+.popular-post-thumbnail img {
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.popular-post-details {
+    flex: 1;
+}
+
+.popular-post-title {
+    margin: 0;
+    font-size: 16px; /* Adjust font size as needed */
+    color: #333; /* Adjust text color as needed */
+}
+
+.popular-post-meta {
+    font-size: 14px; /* Adjust font size as needed */
+    color: #0f0e0e; /* Adjust text color as needed */
+}
+
+/* Style the author name in red */
+.popular-post-meta .author-name {
+    color: red; /* Red color for the author's name */
+}
+/* Archive Section Styles */
+.archive-section {
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.archive-title {
+    font-size: 18px; /* Adjust font size as needed */
+    color: #333; /* Adjust text color as needed */
+    margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.archive-list {
+    list-style: none; /* Remove default list style */
+    padding-left: 0; /* Remove left padding */
+}
+
+.archive-list li {
+    margin-bottom: 8px; /* Space between archive items */
+}
+
+.archive-list a {
+    color: #050505; /* Adjust link color as needed */
+    text-decoration: none; /* Remove underline */
+}
+
+.archive-list a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+/* Container holding both main content and sidebar */
+.content-wrapper {
+    display: flex; /* Use flexbox to position content and sidebar side by side */
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust max-width as needed */
+    padding: 20px; /* Optional padding around the container */
+}
+
+/* Main content area styling */
+.main-content-area {
+    flex: 3; /* Adjust the proportion of space taken by the main content */
+    padding: 20px;
+    /* Optional: Add border or background to distinguish the main content area */
+}
+
+/* Sidebar area styling */
+.sidebar-area {
+    flex: 1; /* Adjust the proportion of space taken by the sidebar */
+    padding: 20px;
+   
+    /* Optional: Add border or box shadow for visual separation */
+}
+
+.post-comments-count {
+    color: red; /* Light color for comments count */
+    margin-left: 500px; /* Space between comments count and date */
+ 
+}
+
+.post-tags {
+    margin-top: 20px; /* Space above the tags */
+}
+
+.post-tags .tags-title {
+    font-weight: bold; /* Make the "Tags: " label bold */
+}
+
+.post-tags a {
+    color: red ; /* Style the tag links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.post-tags a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+/* Ensure both content and sidebar are responsive */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column; /* Stack content and sidebar vertically on smaller screens */
+    }
+    
+}
+/* Styling for the comments section */
+.comments-area {
+    margin-top: 20px; /* Space above the comments section */
+    padding: 20px; /* Padding around the comments section */
+    border: 1px solid #ddd; /* Light border around the comments section */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Styling for comments list */
+.comment-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+/* Styling for individual comments */
+.comment-body {
+    margin-bottom: 20px; /* Space between comments */
+    padding: 15px; /* Padding inside each comment */
+    border-bottom: 1px solid #ddd; /* Border below each comment */
+}
+
+.comment-body:last-child {
+    border-bottom: none; /* Remove border from the last comment */
+}
+
+/* Styling for comment author and meta information */
+.comment-meta {
+    margin-bottom: 10px; /* Space below meta information */
+    text-align: left;
+}
+
+.comment-author {
+    font-weight: bold; /* Bold font for author name */
+    color: red ;
+}
+
+.comment-meta time {
+    color: #666; /* Light gray color for date and time */
+    font-size: 0.9em; /* Slightly smaller font size */
+}
+
+/* Styling for comment content */
+.comment-content {
+    margin-top: 10px; /* Space above comment content */
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+/* Styling for reply link */
+.reply {
+    margin-top: 10px; /* Space above reply link */
+}
+
+.reply a {
+    color: #007bff; /* Color for reply link */
+    text-decoration: none; /* Remove underline */
+}
+
+.reply a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Styling for the comment form */
+.comment-form-wrapper {
+    margin-top: 20px; /* Space above the comment form */
+}
+
+.comment-form {
+    background-color: #fff; /* Background color for form */
+    padding: 20px; /* Padding inside the form */
+    border: 1px solid #ddd; /* Border for the form */
+    border-radius: 8px; /* Rounded corners for the form */
+}
+
+.comment-form label {
+    display: block; /* Display labels as block for better layout */
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold font for labels */
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%; /* Full width for input fields and textarea */
+    padding: 10px; /* Padding inside input fields and textarea */
+    border: 1px solid #ddd; /* Border for input fields and textarea */
+    border-radius: 4px; /* Rounded corners for input fields and textarea */
+    margin-bottom: 10px; /* Space below input fields and textarea */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.comment-form button {
+    background-color: #007bff; /* Background color for the submit button */
+    color: #fff; /* Text color for the submit button */
+    border: none; /* Remove default border */
+    padding: 10px 15px; /* Padding inside the button */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 1em; /* Font size for button text */
+}
+
+.comment-form button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
